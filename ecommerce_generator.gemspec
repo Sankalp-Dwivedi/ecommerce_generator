@@ -8,17 +8,17 @@ Gem::Specification.new do |spec|
   spec.authors = ["Sankalp Dwivedi"]
   spec.email = ["dwivedisankalp02@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "This is a basic ecom structure generator."
+  # spec.description = "TODO: Write a longer description or delete this line."
+  spec.homepage = "https://github.com/Sankalp-Dwivedi/ecommerce_generator"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/Sankalp-Dwivedi/ecommerce_generator"
+  spec.metadata["changelog_uri"] = "https://github.com/Sankalp-Dwivedi/ecommerce_generator"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -36,7 +36,9 @@ Gem::Specification.new do |spec|
   # spec.add_dependency "example-gem", "~> 1.0"
   spec.add_dependency "rails"
   spec.add_dependency "activerecord"
-  spec.add_dependency 'rails_admin'
+  spec.add_dependency 'rails_admin', "~> 3.0"
+  spec.files = Dir["lib/**/*.rb"] + Dir["templates/**/*"]
+
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
